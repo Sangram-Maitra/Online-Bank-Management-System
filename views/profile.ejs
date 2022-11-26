@@ -1,0 +1,25 @@
+<%- include("header") -%> 
+    <%- include("navbar") -%> 
+    <div style="background-image: url(https://img.freepik.com/free-vector/recruit-agent-analyzing-candidates_74855-4565.jpg?w=1380&t=st=1669313610~exp=1669314210~hmac=105ba545eb0801dce55a1b920a6ecf15dd0645ebdf4ddce774221689b58f4740);">
+    <h1 class="c-greet" style="padding-left: 30%;">WELCOME <%= Details[0].NamePrefix %> <%= Details[0].FName %> </h1>
+        <div class="container text-center">
+                    <div class="col">
+                        <form class="c-form" action="/" method="post">
+                            <h1 class="c-prof">AccountNumber: <%= Details[0].AccountNumber %>  </h1>
+                            <h1 class="c-prof">Name:<%= Details[0].NamePrefix %> <%= Details[0].FName %> <%= Details[0].LName %></h1>
+                            <h1 class="c-prof">Id Number: <%= Details[0].IdCard %>  </h1>
+                            <h1 class="c-prof">Email: <%= Details[0].Email %>  </h1>
+                            <h1 class="c-prof">Balance: <%= Details[0].Balance %>  </h1>
+                            <h1 class="c-prof">PhoneNumber: <%= Details[0].PhoneNumber %>  </h1>
+                            <h1 class="c-prof">Gender: <%= Details[0].Gender %>  </h1>
+                            <h1 class="c-prof">DOB: <%= Details[0].DOB %>  </h1>
+                            <h1 class="c-prof">MaritalStatus: <%= Details[0].MaritalStatus %>  </h1>
+                            <h1 class="c-prof">Address: <%= Details[0].Address %>  </h1>
+                            <h1 class="c-prof">Pin Code: <%= Details[0].PinCode %>  </h1>
+                            <h1 class="c-prof">Branch: <%= Details[0].BranchName %>  </h1>
+                            <h1 class="c-prof">Nominee Name: <%= Details[0].NomineeName %>  </h1>
+                        </form>
+                    </div>   
+        </div>
+    </div>
+<%- include("footer") -%> 

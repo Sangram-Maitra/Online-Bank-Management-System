@@ -1,0 +1,103 @@
+<%- include("header") -%> 
+<%- include("navbar") -%> 
+    <% if(serverError.length>0){ %>
+        <div class="alert alert-danger"><%=serverError%></div>
+    <% } %>
+    <form action="/chequeChange" method="post">
+
+
+        <section class="h-100 bg-dark">
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col">
+                  <div class="card card-registration my-4 ">
+                    <div class="row g-0">
+                      
+                      <div class="col-lg-6 bg-indigo text-white">
+                        <div class="p-5">
+                          <h3 class="fw-normal mb-5">Customer Cheque permission</h3>
+  
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                              <input type="number" id="form3Examplea2" name="acc" required="required" placeholder="Account Number" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Examplea2">AccountNumber </label>
+                            </div>
+                          </div>
+
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                              <input type="text" id="form3Examplea2" name="fName" required="required" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Examplea2">First Name </label>
+                            </div>
+                          </div>
+                          
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                              <input type="text" id="form3Examplea6" class="form-control form-control-lg" />
+                              <label class="form-label" name="lName" for="form3Examplea6">Last Name</label>
+                            </div>
+                          </div>
+
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                              <label class="form-label" name="cheque" for="form3Examplea6">Cheque Permission</label>
+                              <select name="cheque" id="form3Examplea6">
+                                  <option value="Available">Access</option>
+                                  <option value="UnAvailable">Denied</option>
+                              </select>
+                            </div>
+                          </div>
+  
+  
+                          <div class="row">
+                            <div class="col-md-5 mb-4 pb-2">
+        
+                              <div class="form-outline form-white">
+                                <input type="text" id="form3Examplea7" class="form-control form-control-lg" />
+                                <label class="form-label" for="form3Examplea7">Code +</label>
+                              </div>
+        
+                            </div>
+                            <div class="col-md-7 mb-4 pb-2">
+        
+                              <div class="form-outline form-white">
+                                <input type="number" name="Phone" required="required" id="form3Examplea8" class="form-control form-control-lg" />
+                                <label class="form-label" for="form3Examplea8">Phone Number</label>
+                              </div>
+                              
+  
+                            </div>
+                          </div>
+        
+                          <div class="form-check d-flex justify-content-start mb-4 pb-3">
+                            <input class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" />
+                            <label class="form-check-label text-white" for="form2Example3">
+                              I do accept the <a href="#!" class="text-white"><u>Terms and Conditions</u></a> of your
+                              site.
+                            </label>
+                          </div>
+        
+                          <!-- <button type="button" class="btn btn-light btn-lg"
+                            data-mdb-ripple-color="dark">Submit</button> -->
+                            <button class="btn btn-lg">Submit</button>
+                          
+                          </form>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 d-none d-xl-block">
+                        <img src="https://img.freepik.com/free-vector/cloud-computing-security-abstract-concept-illustration_335657-3798.jpg?w=740&t=st=1669297940~exp=1669298540~hmac=a32bc4b6bccf4ab5efc0e65b227f91d5a60498d994412334d09e2164cc276ce7"
+                          alt="Sample photo" class="img-fluid"
+                          style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem; height: 40rem;" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+    </form>
+
+    
+
+<%- include("footer") -%> 

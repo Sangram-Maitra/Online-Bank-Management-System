@@ -1,0 +1,147 @@
+<%- include("header") -%> 
+<%- include("navbar") -%> 
+    <% if(serverError.length>0){ %>
+        <div class="alert alert-danger"><%=serverError%></div>
+    <% } %>
+    <form action="/addChangeReq" method="post">
+        <section class="h-100 bg-dark">
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col">
+                  <div class="card card-registration my-4 ">
+                    <div class="row g-0">
+                      
+                      <div class="col-lg-6 bg-indigo text-white">
+                        <div class="p-5">
+                          <h3 class="fw-normal mb-5">Customer Address Change</h3>
+  
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                              <input type="text" id="form3Examplea2" name="acc" required="required" placeholder="Acc Number" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Examplea2">AccountNumber </label>
+                            </div>
+                          </div>
+
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                              <input type="text" id="form3Examplea2" name="add" required="required" placeholder="Address" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Examplea2">Address </label>
+                            </div>
+                          </div>
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                              <input type="text" id="form3Examplea2" name="Sadd" required="required" placeholder="StreetAdress*" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Examplea2">Street Address </label>
+                            </div>
+                          </div>
+  
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                              <input type="text" id="form3Examplea2" name="Sadd2" placeholder="StreetAdress2" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Examplea2">Street Address2 </label>
+                            </div>
+                          </div>
+        
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                              <input type="text" name="City" id="form3Examplea3" class="form-control form-control-lg" required="required"/>
+                              <label class="form-label" for="form3Examplea3">City: </label>
+                            </div>
+                          </div>
+  
+                          <div class="row">
+                            <div class="col-md-5 mb-4 pb-2">
+                              <div class="form-outline form-white">
+                                <input type="text" id="form3Examplea4" name="Zip_code" class="form-control form-control-lg" required="required" placeholder="Zip_code" />
+                                <label class="form-label" for="form3Examplea4">Zip Code</label>
+                              </div>    
+                            </div>
+
+                            <div class="col-md-7 mb-4 pb-2">
+        
+                              <div class="form-outline form-white">
+                                <input type="text" name="State" id="form3Examplea5" class="form-control form-control-lg" required="required"  placeholder="State" />
+                                <label class="form-label" for="form3Examplea5">Place</label>
+                              </div>
+        
+                             
+                            </div>
+                          </div>
+        
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                              <input type="text" id="form3Examplea6" class="form-control form-control-lg" />
+                              <label class="form-label" name="country" for="form3Examplea6">Country</label>
+  
+                            </div>
+                          </div>
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                                <label class="tex animation" for="passWord">Password: </label>
+                                <input type="password" name="passWord" class="form-control tex" id="passWord" required="required" placeholder="">
+                            </div>
+                          </div>
+
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                                <label class="tex animation" for="branchCode">BranchCode: </label>
+                                <input type="password" name="branchCode" class="form-control tex" id="branchCode" required="required" placeholder="">
+                            </div>
+                          </div>
+                          <div class="mb-4 pb-2">
+                            <div class="form-outline form-white">
+                                <label class="tex animation" for="branchName">BranchName: </label>
+                                <input type="password" name="branchName" class="form-control tex" id="branchName" required="required" placeholder="">
+                            </div>
+                          </div>
+  
+  
+                          <div class="row">
+                            <div class="col-md-5 mb-4 pb-2">
+        
+                              <div class="form-outline form-white">
+                                <input type="text" id="form3Examplea7" class="form-control form-control-lg" />
+                                <label class="form-label" for="form3Examplea7">Code +</label>
+                              </div>
+        
+                            </div>
+                            <div class="col-md-7 mb-4 pb-2">
+        
+                              <div class="form-outline form-white">
+                                <input type="text" name="Phone" required="required" id="form3Examplea8" class="form-control form-control-lg" />
+                                <label class="form-label" for="form3Examplea8">Phone Number</label>
+                              </div>
+                              
+  
+                            </div>
+                          </div>
+        
+                          <div class="form-check d-flex justify-content-start mb-4 pb-3">
+                            <input class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" />
+                            <label class="form-check-label text-white" for="form2Example3">
+                              I do accept the <a href="#!" class="text-white"><u>Terms and Conditions</u></a> of your
+                              site.
+                            </label>
+                          </div>
+                          <!-- <button type="button" class="btn btn-light btn-lg"
+                            data-mdb-ripple-color="dark">Submit</button> -->
+                            <button class="btn btn-lg">Submit</button>
+                          
+                          </form>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 d-none d-xl-block">
+                        <img src="https://img.freepik.com/free-vector/location-tracking-concept-illustration_114360-7090.jpg?w=740&t=st=1669299651~exp=1669300251~hmac=180c9d440a4c52bc1635ee05ea533ecc76a891c7562ebe46b9a485bb1574f36e"
+                          alt="Sample photo" class="img-fluid"
+                          style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem; height: 40rem;" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+    </form> 
+
+<%- include("footer") -%> 

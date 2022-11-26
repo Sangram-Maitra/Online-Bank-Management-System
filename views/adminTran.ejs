@@ -1,0 +1,50 @@
+<%- include("header") -%> 
+<%- include("navbar2") -%> 
+    <% if(SearchFailure.length>0){ %>
+        <div class="alert alert-danger"><%=SearchFailure%></div>
+    <% } %>
+    <div class="ListStyle"> 
+    <h1>All Transactions are: </h1>
+        <!-- this need to be modify -->
+        <div class="row">
+            <div class="col-1">
+                <p class="c-navText">Acc. No</p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText">Full Name</p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText">Last Name</p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText" style="padding-left: 2rem; padding-right: 2rem;">Balance</p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText">Deposit or Withdraw</p>  
+            </div>
+            <hr><hr>
+        </div>
+        <% for(i=0;i<details.length;i++){%>
+        <div class="row">
+            <div class="col-1">
+                <p class="c-navText"><%=details[i].accNum%></p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText"><%=details[i].FName%></p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText"><%=details[i].LName%></p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText" style="padding-left: 2rem; padding-right: 2rem;"><%=details[i].Diposit_Withdraw %></p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText"><%=details[i].diporwith %></p>  
+            </div>
+        </div>
+        <hr>
+        <%}%>
+    </div>
+    
+
+<%- include("footer") -%> 

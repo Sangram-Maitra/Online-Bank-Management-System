@@ -1,0 +1,354 @@
+.sec1{
+    /* height: 50rem; */
+    width: 50rem;
+    /* font-family: 'Quicksand', sans-serif; */
+    background: url("loginPage.jpg");
+    background-size: 100rem;
+}
+
+
+
+body{
+    font-family: 'Montserrat';
+}
+
+h1,h2,h3,h4,h5{
+    font-family: "Montserrat-Bold";
+}
+
+p{
+    color:#8f8f8f
+}
+
+#title{
+    background-color: #18cefc;
+    /* padding-bottom: 2rem; */
+}
+
+#cta{
+    background-color: #0d9af8;
+    text-align: center;
+    margin: auto;
+}
+
+#testimonials{
+    
+    text-align: center;
+    /* margin:auto; */
+    background-color: #18cefc;
+    color:white;
+
+}
+
+#press{
+    background-color: #18cefc;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+#pricing{
+    padding:100px;
+    text-align: center;
+}
+
+#features{
+    padding: 7% 13%;
+    z-index: 1;
+    background-color: #fff;
+    position: relative;
+}
+
+#footer{
+    text-align: center;
+    margin:5% 1% 2%;
+}
+
+.head_text{
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.nav-item{
+    padding-left: 3rem;
+}
+
+.nav-item:hover{
+    color: rgb(255, 255, 255);
+}
+
+.container-fluid{
+    /* padding: 3% 15% 7%; */
+    padding-bottom: 2%;
+}
+/* 
+.col-lg-6{
+    padding-top: 7rem;
+} */
+
+.download-button{
+    margin-top: 4rem;
+    margin-right:1rem;
+}
+
+.big_heading{
+    font-family: 'Montserrat-Black';
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1.3;
+    color: white;
+    padding-left: 2rem;
+}
+
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.feature_section{
+    padding-top:1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.pricing_section{
+    padding-top:1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.navbar{
+    padding-bottom:0;
+}
+
+.navbar-brand
+{
+    font-weight: bold;
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+}
+
+.login_page{
+    /* margin-left: 1rem;
+    margin-right: 10rem; */
+    margin-top: 11rem;
+    margin-right: 10rem;
+    /* transform: rotate(25deg); */
+    width:50%;
+    height: 35rem;
+    position: absolute;
+    
+    /* right: 17%; */
+    z-index: 0;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+}
+
+.column{
+    text-align: center;
+}
+
+.font_awesome{
+    color:#18cefc;
+}
+
+.font_awesome:hover{
+    color:#0d9af8;
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+}
+
+.preess-image{
+    width: 15%;
+    margin:20px 20px 15px;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+.pricing-column {
+    padding:3% 2%;
+}
+
+.footer_btn{
+    margin:5% 2%;
+}
+
+/* .last_footer{
+    font-family: "Montserrat-Black";
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #fff;
+} */
+
+
+@media (max-width:1024px)
+{
+    .login_page{
+        position: static;
+        transform:rotate(0);
+        width: 80%;
+        padding-top: 2rem;
+        margin:auto;
+    }
+
+    #title{
+        text-align: center;
+    }
+}
+
+.btn{
+    border-radius: 3!important;
+    background-color: #109cfa !important;
+    border-color: white!important;
+    color: #ffffff!important;
+    font-family: 'Quicksand', sans-serif !important;
+    margin: 1rem 0 1.2rem 0!important;
+
+}
+.btn:hover{
+    background: white!important;
+    color: black !important;
+    box-shadow: 5px 5px 1px#109cfa !important;
+    /* opacity: 0.7; */
+}
+
+
+.card{
+    margin-left: 3rem;
+    background-color: #0d9af8;
+}
+
+.circle-icon {
+    background: #ffc0c0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 30px;
+}
+
+.cust_support{
+    width: 100%;
+}
+
+.c-foot{
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    /* text-align: center; */
+}
+
+.about{
+    background-color: #06263b;
+}
+
+.aboutHeading{
+    font-family: 'Montserrat-Black';
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1.3;
+    color: white;
+    padding-left: 2rem;
+}
+
+.aboutImg{
+    height: 40rem;
+    
+
+}
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }
+    .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+    
+    .gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #a1c4fd;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1))
+    }
+    
+    .bg-indigo {
+    background-color: #4835d4;
+    }
+    @media (min-width: 992px) {
+    .card-registration-2 .bg-indigo {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    }
+    }
+    @media (max-width: 991px) {
+    .card-registration-2 .bg-indigo {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    }
+    }
+
+
+.homeImg{
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+
+.ListStyle{
+    /* background-image: url("https://img.freepik.com/free-vector/flat-design-geometric-background_23-2149332009.jpg?w=1060&t=st=1669277439~exp=1669278039~hmac=a246543c700406ae27b73980ea1063a690e49058d7b675fce8f51c750cdd40fa"); */
+    background-size: cover;
+    padding-left: 5rem;
+}
+
+.c-navText{
+    color: black;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.homepage_log{
+    font-size: larger;
+}

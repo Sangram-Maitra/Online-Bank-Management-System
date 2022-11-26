@@ -1,0 +1,80 @@
+<%- include("header") -%> 
+<% if(serverError.length>0){ %>
+    <div class="alert alert-danger"><%=serverError%></div>
+<% } %>
+    <form action="/AdminsigningIn" method="post">
+        <!-- <div class="row mb-3 c-Div">
+            <label class="tex animation" for="id">ID: </label>
+            <input type="text" name="id" class="form-control tex" id="id" required="required">
+        </div>
+        <div class="row mb-3 c-Div">
+            <label class="tex animation" for="pass">Password</label>
+            <input type="password" name="password" class="form-control tex" id="Pass" required="required">
+        </div>
+        <button class="btn btn-xl">Submit</button> -->
+
+        <section class="vh-100">
+            <div class="container py-5 h-100">
+              <div class="row d-flex align-items-center justify-content-center h-100">
+                
+                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+    
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                      <input type="number" name="id" id="form1Example13" class="form-control form-control-lg" />
+                      <label class="form-label" for="form1Example13">Id: </label>
+                      
+                    </div>
+          
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                      <input type="password" name="password" id="form1Example23" class="form-control form-control-lg" />
+                      <label class="form-label"  for="form1Example23">Password</label>
+    
+                      <!-- <label class="tex animation" for="pass">Password</label>
+                      <input type="password" name="password" class="form-control tex" id="Pass" required="required"> -->
+    
+                    </div>
+          
+                    <div class="d-flex justify-content-around align-items-center mb-4">
+                      <!-- Checkbox -->
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                        <label class="form-check-label" for="form1Example3"> Remember me </label>
+                      </div>
+                      <a href="#!">Forgot password?</a>
+                    </div>
+          
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+                    <!-- </form> -->
+                    <!-- <div class="divider d-flex align-items-center my-4">
+                      <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+                    </div> -->
+    
+          
+                    <!-- <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="#!"
+                      role="button">
+                      <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
+                    </a>
+                    <a class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="#!"
+                      role="button">
+                      <i class="fab fa-twitter me-2"></i>Continue with Twitter</a> -->
+          
+                </div>
+                <div class="col-md-8 col-lg-7 col-xl-6">
+                    <img src="https://img.freepik.com/free-vector/communication-flat-icon_1262-18771.jpg?w=900&t=st=1669268571~exp=1669269171~hmac=2a88ae0acd50025f645cc5a3c6e8e3e6265c409cde15ad7fc0435af5b36c2fd8"
+                      class="img-fluid" alt="Phone image">
+                  </div>
+              </div>
+            </div>
+          </section>
+    
+        <!--  -->
+
+    </form>
+    <!--  -->
+    
+
+
+<%- include("footer") -%> 

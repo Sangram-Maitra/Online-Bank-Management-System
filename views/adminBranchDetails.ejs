@@ -1,0 +1,47 @@
+<%- include("header") -%> 
+<%- include("navbar2") -%> 
+    <% if(serverError.length>0){ %>
+        <div class="alert alert-danger"><%=serverError%></div>
+    <% } %>
+    <div class="ListStyle">
+        <h1 class="c-navText">All Branches are: </h1>
+        <div class="row">
+            <div class="col-2">
+                <p class="c-navText">ID</p>  
+            </div>
+            <div class="col-2">
+                <p class="c-navText">Branch Name</p>  
+            </div>
+            <div class="col-2">
+                <p class="c-navText">House Number</p>  
+            </div>
+            <div class="col-2">
+                <p class="c-navText">City</p>  
+            </div>
+            <div class="col-2">
+                <p class="c-navText">Zip Code</p>  
+            </div>
+        </div>
+        <hr><hr>
+        <% for(i=0;i<details.length;i++){%>
+            <div class="row">
+                <div class="col-2">
+                    <p class="c-navText"><%=details[i].id%></p>  
+                </div>
+                <div class="col-2">
+                    <p class="c-navText"><%=details[i].BranchName%></p>  
+                </div>
+                <div class="col-2">
+                    <p class="c-navText"><%=details[i].HouseNumber%> </p>  
+                </div>
+                <div class="col-2">
+                    <p class="c-navText"><%=details[i].City %></p>  
+                </div>
+                <div class="col-2">
+                    <p class="c-navText"><%=details[i].ZipCode %></p>  
+                </div>
+            </div>
+            <hr>
+    <%}%>
+</div>
+<%- include("footer") -%> 

@@ -1,0 +1,87 @@
+<%- include("header") -%> 
+<%- include("navbar") -%> 
+    <% if(serverError.length>0){ %>
+        <div class="alert alert-danger"><%=serverError%></div>
+    <% } %>
+    <form action="/moneyDiposit" method="post">
+
+
+        <section class="h-100 bg-dark">
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col">
+                  <div class="card card-registration my-4">
+                    <div class="row g-0">
+                      <div class="col-xl-6 d-none d-xl-block">
+                        <img src="https://img.freepik.com/free-vector/saving-money-financial-concept_74855-7849.jpg?w=1060&t=st=1669248251~exp=1669248851~hmac=243186f03a81623de5258bc746cdfa7a317f9b84f446c6e2c72da39bb25f2260"
+                          alt="Sample photo" class="img-fluid"
+                          style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem; height: 40rem;" />
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="card-body p-md-5 text-black">
+                          <h3 class="mb-5 text-uppercase">Customer Diposit Form</h3>
+          
+                          <div class="row">
+                            <div class="col-md-6 mb-4">
+                              <div class="form-outline">
+                                <input type="text" name="First_Name" required="required" placeholder="First Name" id="form3Example1m" class="form-control form-control-lg" />
+                                <label class="form-label" for="form3Example1m">First name</label>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <!-- <div class="row mb-3 c-Div">  
+                                <label class="tex animation" for="Fname">First Name</label>
+                                <input type="text" name="First_Name" class="form-control tex" id="Fname" required="required" placeholder="First Name">
+                            </div> -->
+                            <!--  -->
+    
+                            <div class="col-md-6 mb-4">
+                              <div class="form-outline">
+                                <input type="text" name="Last_Name" id="form3Example1n" class="form-control form-control-lg" required="required" placeholder="Last name"/>
+                                <label class="form-label" for="form3Example1n">Last name</label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <label for="Account_Type">Account Type</label>
+                            <select name="Account_Type" id="Account Type">
+                            <option value="Current">Current</option>
+                            <option value="Saving">Saving</option>
+                          </div>
+                        </div>
+                        
+                          <div class="form-outline mb-4">
+                            <input type="number" name="accNum" id="form3Example8" required="required" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Example8">Account Number</label>
+                          </div>
+    
+                          <div class="form-outline mb-4">
+                            <input type="number" name="Deposit" id="form3Example8" required="required" placeholder="RS" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Example8">Deposit</label>
+                          </div>
+    
+                          <div class="form-outline mb-4">
+                            <input type="password" name="passWord" id="form3Example8" required="required" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Example8">Password: </label>
+                          </div>
+    
+                         
+                            <!-- <button type="button" class="btn btn-warning btn-lg ms-2">Submit form</button> -->
+                            <button class="btn btn-lg" >Submit</button>
+                          </div>
+          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+    </form>
+
+    
+
+<%- include("footer") -%> 

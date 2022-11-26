@@ -1,0 +1,47 @@
+<%- include("header") -%> 
+<%- include("navbar") -%> 
+    <% if(SearchFailure.length>0){ %>
+        <div class="alert alert-danger"><%=SearchFailure%></div>
+    <% } %>
+    <img class="homeImg" src="https://img.freepik.com/free-vector/people-protecting-their-cash_74855-5553.jpg?w=1060&t=st=1669246436~exp=1669247036~hmac=a183e6e093980c367f9636c7c110af88f78f3c71b8f792fcb93a7189548ad5ae" alt="">
+    <div class="row">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://img.freepik.com/free-vector/indian-rupee-money-bag_23-2147998532.jpg?w=740&t=st=1669284419~exp=1669285019~hmac=917540c11118921f7ed411f7850a26208cb5682a4e0b80bc8b01e1f7c3210abc" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Deposit</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="/custdip" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" style="width: 15rem; height: 17rem;" src="https://img.freepik.com/free-vector/man-paying-online-receiving-cashback-wallet_88138-692.jpg?w=1060&t=st=1669284746~exp=1669285346~hmac=8e710b9ff1154a2da18b9f069123dfc555541f3b8ae3eedd5e29775a8541e210" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Withdraw</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="/custWithdraw" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://img.freepik.com/free-vector/indian-rupee-currency-exchange_23-2148005480.jpg?w=740&t=st=1669284637~exp=1669285237~hmac=7fd04386e39bffe407a3fee3110dc3d2b0ddf0db4cb7f4f275d4f362d5a871f0" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">FundTransfer</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="/custFundTran" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://img.freepik.com/free-vector/address-concept-illustration_114360-221.jpg?w=740&t=st=1669298660~exp=1669299260~hmac=a747d7bc29b8c1022010f704f9ded2a5a5358ff796db9ca1f6eae4ead0b47294" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Address Change Request</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="/custAddchange" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
+
+    </div>
+   
+    
+
+<%- include("footer") -%> 

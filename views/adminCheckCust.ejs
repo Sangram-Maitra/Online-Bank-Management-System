@@ -1,0 +1,66 @@
+<%- include("header") -%> 
+<%- include("navbar2") -%> 
+    <% if(serverError.length>0){ %>
+        <div class="alert alert-danger"><%=serverError%></div>
+    <% } %>
+    <h1>All Customers are: </h1>
+    <div class="ListStyle"> 
+        <!-- this need to be modify -->
+        <div class="row">
+            <div class="col-1">
+                <p class="c-navText">Acc. No</p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText">Acc. Type</p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText">Full Name</p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText">Id Card</p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText">Email</p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText">Balance</p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText">Phone Number</p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText">Branch Name</p>  
+            </div>
+        </div>
+        <hr>
+        <% for(i=0;i<details.length;i++){%>
+        <div class="row">
+            <div class="col-1">
+                <p class="c-navText"><%=details[i].AccountNumber%></p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText"><%=details[i].AccType%></p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText"><%=details[i].NamePrefix%> <%=details[i].FName%> <%=details[i].LName%> </p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText"><%=details[i].IdCard %></p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText"><%=details[i].Email %></p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText"><%=details[i].Balance %></p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText"><%=details[i].PhoneNumber %></p>  
+            </div>
+            <div class="col-1">
+                <p class="c-navText"><%=details[i].BranchName %></p>  
+            </div>
+        </div>
+        <hr>
+        <%}%>
+    </div>
+<%- include("footer") -%> 

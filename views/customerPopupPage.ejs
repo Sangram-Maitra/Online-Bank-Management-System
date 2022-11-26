@@ -1,0 +1,27 @@
+<%- include("header") -%> 
+    <form action="/customerhome" method="get">
+        <div class="row mb-3 c-Div">
+            <h1>The Account is Successfully Made</h1>
+
+            <div class="container">
+                <div class="row text-center">
+                    <!-- <div class="col-sm-6 col-sm-offset-3"> -->
+                    <br><br> <h2 style="color:#0fad00">Success</h2>
+                    <p style="font-size:20px;color:#5C5C5C; text-align: center;">Thank you for Sigining up</p>
+                    <br><br>
+                    <!-- </div> -->
+                    <label class="tex animation" for="accnum">Account Number</label>
+            <!-- <input type="text" name="accountNumber" class="form-control tex" id="accnum" readonly  placeholder="<%=pageAccountNumber%>"> -->
+                    <h1><%=pageAccountNumber%></h1>
+                    <!-- <button class="btn btn-xl">Done</button> -->
+                    <button class="btn btn-lg">Done</button>
+                </div>
+            </div>
+
+            
+        </div>
+        
+    </form>
+
+    
+<%- include("footer") -%> 

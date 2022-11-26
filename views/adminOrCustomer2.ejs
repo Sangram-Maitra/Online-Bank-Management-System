@@ -1,0 +1,170 @@
+<%- include("header") -%> 
+<% if(serverError.length>0){ %>
+    <div class="alert alert-danger"><%=serverError%></div>
+<% } %>
+
+
+<section id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar-dark bg-dark">
+        <!-- <div class="container-fluid"> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon" style="width: 2rem; height: 2rem;"></span>
+          </button>
+          <a class="navbar-brand homepage_log" style="font-size: 2rem; " href="#">BankManagementSystem</a>
+          <!-- <h1 class="big_heading">BankManagementSystem</h1> -->
+          <!-- <h1 class="big_heading">Found Bank at your Fingertip</h1> -->
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Rivews</a>
+              </li>
+            
+            
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+            </ul>
+          </div>
+        <!-- </div> -->
+      </nav>
+      <img class="login_page" src="css/adminOrCustomer2.png" alt="login_page" />
+      <!-- Title -->
+      
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big_heading">Find Bank at your FingerTip</h1>
+
+          <div class="row">
+            <div class="card" style="width: 18rem;">
+                <!-- <img class="card-img-top" src="https://visualpharm.com/assets/381/Admin-595b40b65ba036ed117d3b23.svg" alt="Card image cap"> -->
+                <img class="card-img-top" src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?w=740&t=st=1669314593~exp=1669315193~hmac=510e02a5a62f5a9c3fa0088cf4fae2b86256510b14204ff97e0e6dea673ebe0f" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Admin</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="/adminSignin" class="download-button btn btn-dark btn-lg">Login</a>
+                </div>
+              </div>
+            <div class="card" style="width: 18rem;">
+                <!-- <img class="card-img-top" src="https://visualpharm.com/assets/30/User-595b40b85ba036ed117da56f.svg" alt="Card image cap"> -->
+                <img class="card-img-top" src="https://img.freepik.com/free-vector/happy-man-online-dating-via-laptop_74855-7495.jpg?w=740&t=st=1669314521~exp=1669315121~hmac=d6cbe798eab88a9937b0be1268e34ebee03179db95632ff2f018a1fe3fcc09d1" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">User</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="/userSignin" class="download-button btn btn-dark btn-lg">Login</a>
+                </div>
+              </div>
+            </div>
+
+          <!-- <button type="button" class="download-button btn btn-dark btn-lg"><i class="fa-brands fa-apple"></i> Download</button> -->
+          <!-- <button type="button">Download</button> -->
+          <!-- <button type="button" class="download-button btn btn-outline-light btn-lg"><i class="fa-brands fa-google-play"></i>Download</button> -->
+          <!-- <button type="button">Download</button> -->
+        </div>
+        <div class="col-lg-6">
+          <!-- <img class="login_page" src="css/loginPage.jpg" alt="login_page" /> -->
+          <img class="login_page" src="css/adminOrCustomer2.png" alt="login_page" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- Features -->
+  <section id="features">
+    <div class="row-table row">
+      <div class="column col-lg-3">
+      <!-- <i class="fa-solid fa-circle-check font_awesome fa-4x"></i> -->
+      <i class="fa-solid fa-lock font_awesome fa-4x"></i>
+      <h3 class="feature_section">Fully Password Protected</h3>
+      <p>Your Data is Fully Protected and safe.</p>
+    </div>
+    <div class="column col-lg-3">
+      <i class="fa-solid fa-shield-halved font_awesome fa-4x"></i>
+      <h3 class="feature_section">No Piracy</h3>
+      <p>No Piracy of Your Data</p>
+    </div>
+    <div class="column col-lg-3">
+      <!-- <i class="fa-solid fa-heart font_awesome fa-4x"></i> -->
+      <i class="fa-regular fa-clock font_awesome fa-4x"></i>
+      <h3 class="feature_section">24x7</h3>
+      <p>24x7 hours Support Available</p>
+    </div>
+    <div class="column col-lg-3">
+      <i class="fa-solid fa-heart font_awesome fa-4x"></i>
+      <h3 class="feature_section">User Friendly</h3>
+      <p>For all kind of User it's the First Choice</p>
+    </div>
+  </section>
+  <!-- clg image -->
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Title -->
+      <section id="press">
+        <img class="cust_support" src="css/customerSupport.png" alt="cust_support" />
+      </section>
+
+      <!-- Testimonials -->
+
+    <section id="testimonials">
+      <!-- data-bs-ride="false"  use this if dont need auto sliding --> 
+      <div id="carouselcustom" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover">
+        <div class="carousel-inner">
+          <div class="carousel-item active interval:">
+            <h2 class="testimonial-text">
+              This is the Best Securely Trusted Website For any people in the world to Deposit money.
+            </h2>
+            <img class="testimonial-image" src="https://i.pinimg.com/550x/65/41/6d/65416dc460340c5ea88f5cd7737336b8.jpg" alt="dog-profile" />
+            <em>Kolkata,Sithirmore</em>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">This is the Best Website to Securely Deposit Money.</h2>
+            <img class="testimonial-image" src="https://thumbs.dreamstime.com/b/smiling-young-indian-lady-looking-camera-home-headshot-portrait-smiling-young-adult-indian-woman-looking-camera-home-199970396.jpg" alt="lady-profile">
+            <em>Nadia,Krishnanagar</em>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselcustom" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselcustom" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+    </div>
+  </section>
+  <section class="about" id="about"></section>
+  
+  <div class="row">
+    <div>
+      <h1 class="aboutHeading about">AboutUs</h1>
+    </div>
+    <div class="column col-lg-6 aboutHeading about">
+      <h4>Sangram</h4>
+      <h4>Saimanti</h4>
+      <h4>Subhankar</h4>
+      <h4>Soumika</h4>
+    </div>
+    <div class="column col-lg-6">
+      <img class="aboutImg" src="css/aboutPage.jpg" alt="about">
+    </div>
+  </div>
+  <div class="about">
+    <%- include("footer") -%> 
+  </div>
+  </div>
+

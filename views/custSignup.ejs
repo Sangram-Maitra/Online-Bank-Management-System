@@ -1,0 +1,310 @@
+<%- include("header") -%> 
+
+    <% if(serverError.length>0){ %>
+        <div class="alert alert-danger"><%=serverError%></div>
+    <% } %>
+
+    <form action="/custSigningUp" method="post">
+        <!--  -->
+    <section class="h-100 h-custom gradient-custom-2">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12">
+              <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                <div class="card-body p-0">
+                  <div class="row g-0">
+                    <div class="col-lg-6">
+                      <div class="p-5">
+                        <h3 class="fw-normal mb-5" style="color: #4835d4;">General Infomation</h3>
+      
+                        <div class="mb-4 pb-2">
+                            <label for="prefix"></label>
+                            <select name="prefix" class="select" id="prefix">
+                            <option value="Mr.">Mr.</option>
+                            <option value="Mrs.">Mrs.</option>
+                            <option value="Ms.">Ms.</option>
+                            </select>
+                        </div>
+
+                        <!-- <div class="row mb-3 c-Div">
+                            <label for="prefix"></label>
+                            <select name="prefix" id="prefix">
+                            <option value="Mr.">Mr.</option>
+                            <option value="Mrs.">Mrs.</option>
+                            <option value="Ms.">Ms.</option>
+                            </select>
+                        </div> -->
+      
+                        <div class="row">
+                          <div class="col-md-6 mb-4 pb-2">
+      
+                            <div class="form-outline">
+                              <input type="text" id="form3Examplev2" name="First_Name" value="<%=F_Name%>" class="form-control form-control-lg" />
+                              <label class="form-label"  for="form3Examplev2">First name</label>
+                            </div>
+      
+                        </div>
+
+                        <!-- <div class="row mb-3 c-Div">  
+                            <label class="tex animation" for="Fname">First Name</label>
+                            <input type="text" name="First_Name" class="form-control tex" id="Fname" required="required" value="<%=F_Name%>" placeholder="First Name">
+                        </div>
+                        <div class="row mb-3 c-Div"> 
+                            <label class="tex animation" for="Lname">Last Name</label>
+                            <input type="text" name="Last_Name" class="form-control tex" id="Lname" required="required" value="<%=L_Name%>" placeholder="Last name">
+                        </div> -->
+
+                          <div class="col-md-6 mb-4 pb-2">
+      
+                            <div class="form-outline">
+                              <input type="text" id="form3Examplev3" name="Last_Name" value="<%=L_Name%>" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Examplev3">Last name</label>
+                            </div>
+      
+                          </div>
+                        </div>
+      
+                        <div class="mb-4 pb-2">
+                            <label for="Account_Type">Account Type</label>
+                            <select name="Account_Type" class="select">
+                            <option value="Current">Current</option>
+                            <option value="Saving">Saving</option>
+                          </select>
+                        </div>
+
+                        <!-- <div class="row mb-3 c-Div">
+                            <label for="Account_Type">Account Type</label>
+                            <select name="Account_Type" id="Account Type">
+                            <option value="Current">Current</option>
+                            <option value="Saving">Saving</option>
+                            </select>
+                        </div> -->
+      
+                        <div class="mb-4 pb-2">
+                          <div class="form-outline">
+                            <input type="number" name="ID_Card" required="required" value="<%=pageCode%>" id="form3Examplev4" placeholder="ex: 123456780" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Examplev4">ID Card Number: </label>
+                          </div>
+                        </div>
+
+                        <!-- <div class="row mb-3 c-Div">
+                            <label class="tex animation" for="ID_Card">ID Card Number: </label>
+                            <input type="number" name="ID_Card" class="form-control tex" id="ID_Card" required="required" value="<%=pageCode%>" placeholder="ex: 123456780">
+                        </div> -->
+      
+                        <div class="row">
+                          <div class="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
+      
+                            <div class="form-outline">
+                              <input type="number" name="Deposit" id="form3Examplev5" required="required" class="form-control form-control-lg" placeholder="RS"/>
+                              <label class="form-label" for="form3Examplev5">Deposit </label>
+                            </div>
+      
+                          </div>
+                          <div class="col-md-6">
+                            <label for="gender">Gender:*</label>
+                            <select name="Gender" class="select" id="gender">
+                              <option value="Male">Male</option>
+                              <option value="Female">Female</option>
+                              <option value="Other">Other</option>
+                            </select>
+      
+                          </div>
+
+                         
+                        </div><br>
+                        
+                        <div class="col-md-6">
+                            <h5>Date Of Birth:*</h5>
+                            
+                            <select name="date" class="select" id="date">
+                            <% for(i=0;i<PageDate.length;i++){ %>
+                            <option value="<%=PageDate[i]%>"><%=PageDate[i]%></option>
+                            <% } %>
+                            </select>
+                
+                            <select name="month" id="month">
+                            <% for(i=0;i<PageMonth.length;i++){ %>
+                            <option value="<%=PageMonth[i]%>"><%=PageMonth[i]%></option>
+                            <% } %>
+                            </select>
+                
+                            <select name="Year" id="Year">
+                            <% for(i=0;i<PageYear.length;i++){ %>
+                            <option value="<%=PageYear[i]%>"><%=PageYear[i]%></option>
+                            <% } %>
+                            </select>
+                        </div>
+                        <br><br>
+
+                        <div class="col-md-6">
+                            
+                            <label for="MariStatus">Marital Status:*</label>
+                            <select name="MariStatus" id="MariStatus">
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                            </select>
+                        </div>
+                        <br><br>
+                        <div class="col-md-6">
+                            <h5>Branch Name:*</h5>
+                            <select name="BName" id="BName">
+                            <option value="EastKolkata">EastKolkata</option>
+                            <option value="NorthKolkata">NorthKolkata</option>
+                            <option value="SouthKolkata">SouthKolkata</option>
+                            <option value="WestKolkata">WestKolkata</option>
+                            </select>
+                        </div><br><br>
+
+                        <div class="col-md-6">
+                            <label class="tex animation" for="nominee_name">Nominee Name: </label>
+                            <input type="text" name="nominee_name" class="form-control tex" id="Nominee_Name" required="required" placeholder="Name">
+                        </div><br><br>
+                        <div class="col-md-6">
+                            <label class="tex animation" for="passWord">Password: </label>
+                            <input type="password" name="passWord" class="form-control tex" id="passWord" required="required" placeholder="">
+                        </div>
+                        <!-- <div class="row mb-3 c-Div">
+                            <label class="tex animation" for="Deposit">Deposit: </label>
+                            <input type="number" name="Deposit" class="form-control tex" id="Deposit" required="required" placeholder="RS">
+                        </div> -->
+      
+                      </div>
+                    </div>
+                    <div class="col-lg-6 bg-indigo text-white">
+                      <div class="p-5">
+                        <h3 class="fw-normal mb-5">Contact Details</h3>
+
+                        <div class="mb-4 pb-2">
+                          <div class="form-outline form-white">
+                            <input type="text" id="form3Examplea2" name="add" required="required" value="<%=AddressPlace%>" placeholder="Address" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Examplea2">Address </label>
+                          </div>
+                        </div>
+                        <div class="mb-4 pb-2">
+                          <div class="form-outline form-white">
+                            <input type="text" id="form3Examplea2" name="Sadd" required="required" value="<%=sAddress%>" placeholder="StreetAdress*" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Examplea2">Street Address </label>
+                          </div>
+                        </div>
+
+                        <div class="mb-4 pb-2">
+                          <div class="form-outline form-white">
+                            <input type="text" id="form3Examplea2" name="Sadd2" value="<%=sAddress%>" placeholder="StreetAdress2" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Examplea2">Street Address2 </label>
+                          </div>
+                        </div>
+      
+                        <div class="mb-4 pb-2">
+                          <div class="form-outline form-white">
+                            <input type="text" name="City" id="form3Examplea3" class="form-control form-control-lg" required="required" value="<%=pageCity%>"  />
+                            <label class="form-label" for="form3Examplea3">City: </label>
+                          </div>
+                        </div>
+
+                        <!-- <input type="text" name="City" class="form-control tex" id="City" required="required" value="<%=pageCity%>" placeholder="City"> -->
+      
+                        <div class="row">
+                          <div class="col-md-5 mb-4 pb-2">
+      
+                            <div class="form-outline form-white">
+                              <input type="text" id="form3Examplea4" name="Zip_code" class="form-control form-control-lg" required="required" value="<%=pageCode%>" placeholder="Zip_code" />
+                              <label class="form-label" for="form3Examplea4">Zip Code</label>
+                            </div>
+
+                            <!-- <input type="number" name="Zip_code" class="form-control tex" id="Zip_code" required="required" value="<%=pageCode%>" placeholder="Zip_code"> -->
+                          </div>
+                          <div class="col-md-7 mb-4 pb-2">
+      
+                            <div class="form-outline form-white">
+                              <input type="text" name="State" id="form3Examplea5" class="form-control form-control-lg" required="required" value="<%=pageState%>" placeholder="State" />
+                              <label class="form-label" for="form3Examplea5">Place</label>
+                            </div>
+      
+                            <!-- <input type="text" name="State" class="form-control tex" id="State" required="required" value="<%=pageState%>" placeholder="State"> -->
+                          </div>
+                        </div>
+      
+                        <div class="mb-4 pb-2">
+                          <div class="form-outline form-white">
+                            <!-- <input type="text" id="form3Examplea6" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Examplea6">Country</label> -->
+                            <label for="country">Select country: </label>
+                            <select name="country" id="country">
+                                <% for(i=0;i<country_name.length;i++){ %>
+                                <option value="<%=country_name[i]%>"><%=country_name[i]%></option>
+                                <% } %>
+                            </select>
+
+                          </div>
+                        </div>
+
+
+                        <div class="row">
+                          <div class="col-md-5 mb-4 pb-2">
+      
+                            <div class="form-outline form-white">
+                              <input type="text" id="form3Examplea7" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Examplea7">Code +</label>
+                            </div>
+      
+                          </div>
+                          <div class="col-md-7 mb-4 pb-2">
+      
+                            <div class="form-outline form-white">
+                              <input type="text" name="Phone" required="required" value="<%=Phone_numb%>" id="form3Examplea8" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Examplea8">Phone Number</label>
+                            </div>
+                            
+
+                          </div>
+                        </div>
+      
+                        <div class="mb-4">
+                          <div class="form-outline form-white">
+                            <input type="text" required="required" value="" placeholder="ex: abc@gmail.com" name="Email" id="form3Examplea9" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Examplea9">Your Email</label>
+                          </div>
+                        </div>
+
+                        <!-- <div class="row mb-3 c-Div">
+                            <label class="tex animation" for="Email">Email: </label>
+                            <input type="text" name="Email" class="form-control tex" id="Email" required="required" value="" placeholder="ex: abc@gmail.com">
+                        </div> -->
+      
+                        <div class="form-check d-flex justify-content-start mb-4 pb-3">
+                          <input class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" />
+                          <label class="form-check-label text-white" for="form2Example3">
+                            I do accept the <a href="#!" class="text-white"><u>Terms and Conditions</u></a> of your
+                            site.
+                          </label>
+                        </div>
+      
+                        <!-- <button type="button" class="btn btn-light btn-lg"
+                          data-mdb-ripple-color="dark">Submit</button> -->
+                          <button class="btn btn-lg">Submit</button>
+                        
+                        </form>
+                        <form action="/signIn" method="post">
+                            <p class="c-par">Already Have An Account</p>
+                            <button class="btn btn-lg">Sign In</button>
+                            <!--  -->
+                    
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--  -->
+
+        <!--  -->
+    
+
+    
+
+<%- include("footer") -%> 
